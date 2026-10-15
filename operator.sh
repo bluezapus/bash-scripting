@@ -1,10 +1,22 @@
 #!/bin/bash
 
-mynum=20
+#mynum=20
 
-if [ $mynum -eq 20 ] 
+#if [ $mynum -eq 20 ] 
+#then
+#	echo "the condition is true"
+#else
+#	echo "failed"
+#fi
+
+
+command=htop
+if command -v $command
 then
-	echo "the condition is true"
+	echo "$command tersedia"
+
 else
-	echo "failed"
+	echo "tidak ada"
 fi
+
+$command
